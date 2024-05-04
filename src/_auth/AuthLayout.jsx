@@ -17,7 +17,7 @@ const AuthLayout = () => {
 
           <section className="max-w-full">
             <img
-              src="./public/assets/login.jpg"
+              src="/assets/login.jpg"
               alt="login"
               className="max-w-[580px] max-h-screen max-lg:w-[310px] max-sm:hidden"
             />
