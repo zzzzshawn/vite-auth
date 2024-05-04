@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="bg-white z-10 sticky top-0 w-full border-gray-200 dark:bg-slate-950">
       <div className="max-w-screen-xl flex flex-wrap items-center max-md:justify-between justify-around mx-auto p-4">
         <Link
-          to="https://flowbite.com/"
+          to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <svg
@@ -100,7 +100,7 @@ const Navbar = () => {
               ) : (
                 <Link
                   className="bg-blue-500 text-white p-2 rounded-lg"
-                  to="/signup"
+                  to="/sign-up"
                 >
                   Register
                 </Link>

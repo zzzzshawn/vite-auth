@@ -40,7 +40,7 @@ const AuthProvider = ({ children }) => {
       localStorage.getItem("cookieFallback") === "[]" ||
       localStorage.getItem("cookieFallback") === null
     ) {
-      navigate("/signup");
+      navigate("/log-in");
     } else {
       checkAuth();
     }

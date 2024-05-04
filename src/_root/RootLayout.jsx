@@ -11,7 +11,7 @@ const RootLayout = () => {
         </>
       ) : (
         <>
-          <Navigate to="/login" />
+          <Navigate to="/log-in" />
         </>
       )}
     </>

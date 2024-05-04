@@ -14,31 +14,31 @@ const Home = () => {
         </p>
       </div>
 
-      {/* <h2 className="text-4xl font-bold mt-[100px] ">
+      <h2 className="text-4xl font-bold mt-[100px] ">
         Some other projects to look into
       </h2>
-      <div className="rounded-2xl h-full flex flex-col justify-center itc">
-        <Link to="https://keep-notes-ui.vercel.app/" target="_blank">
+      <div className="rounded-2xl h-full flex flex-col justify-center items-center">
+        <Link to="https://keep-notes-ui.vercel.app/" target="_blank" className="flex flex-col items-center justify-center ">
           <img
             src="/assets/project1.png"
             alt="project 1"
-            className="max-w-full max-md:max-w-[200px] pt-10 px-16"
+            className="max-w-[70%] max-md:min-w-full max-md:px-0 max-md:pt-2 pt-10 px-16"
           />
           <p className="text-xl font-bold text-center hover:text-red-600">
             KeepNotes: A simple application to manage your notes
           </p>
         </Link>
-        <Link to="https://tasks-zeta-two.vercel.app/" target="_blank">
+        <Link to="https://tasks-zeta-two.vercel.app/" target="_blank" className="flex flex-col items-center justify-center ">
           <img
             src="/assets/project2.png"
             alt="project 1"
-            className="max-w-full max-md:max-w-[200px] pt-10 px-16"
+            className="max-w-[70%] max-md:min-w-full max-md:px-0 max-md:pt-2 pt-10 px-16"
           />
           <p className="text-xl font-bold text-center hover:text-blue-600">
             KeepNotes: A simple application to manage your notes
           </p>
         </Link>
-      </div> */}
+      </div>
     </div>
   );
 };

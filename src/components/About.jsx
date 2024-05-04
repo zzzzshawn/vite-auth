@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="container mx-auto py-8 w-[800px]">
+    <div className="container mx-auto py-8 px-5 md:max-w-[800px]">
       <h1 className="text-3xl font-extrabold mb-4 border inline-block p-2 rounded-lg bg-white bg-opacity-10">
         About
       </h1>
