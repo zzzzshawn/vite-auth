@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="container mx-auto p-5 pt-14 min-h-full relative">
       <div className="">
-        <h1 className="text-5xl font-extrabold">Welcome back 👋</h1>
+        <h1 className="text-5xl font-extrabold">Welcome👋</h1>
         <h2 className="text-5xl font-bold mt-2 text-blue-400 ">{user.name}</h2>
         <p className="text-xl mt-2">
           We&apos;re thrilled to have you on board! ✨
