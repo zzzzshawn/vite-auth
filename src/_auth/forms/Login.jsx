@@ -5,7 +5,7 @@ import { useAuth } from "../../context/AuthProvider";
 
 const Login = () => {
   const navigate = useNavigate();
-  const { checkAuth} = useAuth();
+  const { checkAuth, setIsLoading, isLoading} = useAuth();
 
   const [currentUser, setCurrentUser] = useState({
     email: "",
@@ -18,11 +18,13 @@ const Login = () => {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
+    setIsLoading(true);
     await loginUser(currentUser);
 
     const isLoggedIn = await checkAuth();
     if(isLoggedIn ){
       navigate('/')
+      setIsLoading(false)
     }
     
   };
@@ -70,6 +72,7 @@ const Login = () => {
         <p className="text-md text-center mt-4 ">
           Don&apos;t have an acount? 
           <Link to="/sign-up">
+            {}
             <span className="font-bold underline text-blue-600"> SignUp</span>
           </Link>
         </p>

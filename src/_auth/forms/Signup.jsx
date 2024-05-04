@@ -9,7 +9,7 @@ const Signup = () => {
     email: "",
     password: "",
   });
-  const { checkAuth } = useAuth();
+  const { checkAuth, setIsLoading } = useAuth();
   const navigate = useNavigate();
 
 
@@ -22,11 +22,13 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true)
     await createUser(currentUser);
     
     const isLoggedIn = await checkAuth();
     if(isLoggedIn ){
       navigate('/')
+      setIsLoading(false)
     }
   };
 

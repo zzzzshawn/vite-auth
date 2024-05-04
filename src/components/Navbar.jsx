@@ -3,11 +3,13 @@ import { useAuth } from "../context/AuthProvider";
 import { logoutUser } from "../lib/appwrite/api";
 
 const Navbar = () => {
-  const { isAuthenticated, setIsAuthenticated } = useAuth();
+  const { isAuthenticated, setIsAuthenticated, setIsLoading } = useAuth();
 
   const handleLogout = async () => {
+    setIsLoading(true)
     await logoutUser();
     setIsAuthenticated(false);
+    setIsLoading(false);
   };
 
   return (

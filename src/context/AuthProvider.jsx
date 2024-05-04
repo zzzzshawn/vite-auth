@@ -4,6 +4,7 @@ import { createContext } from "react";
 import { account } from "../lib/appwrite/config";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
+import Loader from "../components/Loader";
 
 const Authcontext = createContext();
 
@@ -51,10 +52,13 @@ const AuthProvider = ({ children }) => {
     isAuthenticated,
     setIsAuthenticated,
     isLoading,
+    setIsLoading,
     checkAuth,
   };
 
-  return <Authcontext.Provider value={value}>{children}</Authcontext.Provider>;
+  return <Authcontext.Provider value={value}>
+    {isLoading?<Loader bg="bg-black"/> : children}
+  </Authcontext.Provider>;
 };
 
 AuthProvider.propTypes = {
