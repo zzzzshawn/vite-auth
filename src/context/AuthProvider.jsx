@@ -27,7 +27,7 @@ const AuthProvider = ({ children }) => {
         return true;
       }
 
-      setIsLoading(false);
+      setIsLoading(false)''
       return false;
     } catch (error) {
       console.log(error);
