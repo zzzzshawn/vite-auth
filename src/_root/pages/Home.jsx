@@ -5,7 +5,7 @@ const Home = () => {
   const { user } = useAuth();
 
   return (
-    <div className="container mx-auto w-[900px] p-5 pt-14 min-h-full relative">
+    <div className="container mx-auto p-5 pt-14 min-h-full relative">
       <div className="">
         <h1 className="text-5xl font-extrabold">Welcome back 👋</h1>
         <h2 className="text-5xl font-bold mt-2 text-blue-400 ">{user.name}</h2>
@@ -14,15 +14,15 @@ const Home = () => {
         </p>
       </div>
 
-      <h2 className="text-4xl font-bold mt-[100px] ">
+      {/* <h2 className="text-4xl font-bold mt-[100px] ">
         Some other projects to look into
       </h2>
-      <div className="rounded-2xl h-full flex flex-wrap">
+      <div className="rounded-2xl h-full flex flex-col justify-center itc">
         <Link to="https://keep-notes-ui.vercel.app/" target="_blank">
           <img
             src="/assets/project1.png"
             alt="project 1"
-            className="max-w-full pt-10 px-16"
+            className="max-w-full max-md:max-w-[200px] pt-10 px-16"
           />
           <p className="text-xl font-bold text-center hover:text-red-600">
             KeepNotes: A simple application to manage your notes
@@ -32,13 +32,13 @@ const Home = () => {
           <img
             src="/assets/project2.png"
             alt="project 1"
-            className="max-w-full pt-10 px-16"
+            className="max-w-full max-md:max-w-[200px] pt-10 px-16"
           />
           <p className="text-xl font-bold text-center hover:text-blue-600">
             KeepNotes: A simple application to manage your notes
           </p>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
