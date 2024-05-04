@@ -10,13 +10,16 @@ const App = () => {
   return (
     <main className="text-white bg-black min-h-screen">
       <Routes>
-        {/* public route */}
+        {/* Public routes */}
         <Route element={<AuthLayout />}>
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" index element={<Login />} />
+          <Route path="/signup" index element={<Signup />} />
         </Route>
-          <Route path="/about" element={<About />} />
-
+        
+        {/* About page */}
+        <Route path="/about" index element={<About />} />
+        
+        {/* Private routes */}
         <Route element={<RootLayout />}>
           <Route path="/" index element={<Home />} />
         </Route>
