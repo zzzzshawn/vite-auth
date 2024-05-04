@@ -14,7 +14,7 @@ const About = () => {
           Our authentication system is built using{" "}
           <Link to="https://appwrite.io/">
             <img
-              src="/public/assets/appwriteio.svg"
+              src="/assets/appwriteio.svg"
               className="inline-block h-12"
             />
           </Link>
@@ -57,13 +57,13 @@ const About = () => {
           <li className="text-lg font-medium">
             Frontend:{" "}
             <img
-              src="/public/assets/vite.svg"
+              src="/assets/vite.svg"
               alt=""
               className="h-4 inline-block "
             />{" "}
             Vitejs,{" "}
             <img
-              src="/public/assets/react-router-monotone-inverted.svg"
+              src="/assets/react-router-monotone-inverted.svg"
               alt=""
               className="inline-block h-4"
             />
@@ -72,7 +72,7 @@ const About = () => {
             Backend:{" "}
             <Link to="https://appwrite.io/">
               <img
-                src="/public/assets/appwriteio.svg"
+                src="/assets/appwriteio.svg"
                 className="inline-block h-12"
               />
             </Link>
@@ -80,7 +80,7 @@ const About = () => {
           <li className="text-lg font-medium">
             Styling:{" "}
             <img
-              src="/public/assets/tailwindcss-logotype-white.svg"
+              src="/assets/tailwindcss-logotype-white.svg"
               className="inline-block h-4"
             />{" "}
           </li>
@@ -92,7 +92,7 @@ const About = () => {
           About{" "}
           <Link to="https://appwrite.io/">
             <img
-              src="/public/assets/appwriteio.svg"
+              src="/assets/appwriteio.svg"
               className="inline-block h-12"
             />
           </Link>
@@ -137,7 +137,7 @@ const About = () => {
           </li>
           <li>
             <img
-              src="/public/assets/github-mark-white.png"
+              src="/assets/github-mark-white.png"
               className="inline-block h-6"
             />{" "}
             :{" "}
