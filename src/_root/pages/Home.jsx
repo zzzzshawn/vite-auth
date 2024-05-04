@@ -35,7 +35,7 @@ const Home = () => {
             className="max-w-[70%] max-md:min-w-full max-md:px-0 max-md:pt-2 pt-10 px-16"
           />
           <p className="text-xl font-bold text-center hover:text-blue-600">
-            KeepNotes: A simple application to manage your notes
+            Tasks: A simple application to manage your daily tasks
           </p>
         </Link>
       </div>
