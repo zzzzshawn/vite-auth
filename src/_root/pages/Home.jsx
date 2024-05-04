@@ -20,7 +20,7 @@ const Home = () => {
       <div className="rounded-2xl h-full flex flex-wrap">
         <Link to="https://keep-notes-ui.vercel.app/" target="_blank">
           <img
-            src="/src/assets/project1.png"
+            src="/public/assets/project1.png"
             alt="project 1"
             className="max-w-full pt-10 px-16"
           />
@@ -30,16 +30,13 @@ const Home = () => {
         </Link>
         <Link to="https://tasks-zeta-two.vercel.app/" target="_blank">
           <img
-            src="/src/assets/project2.png"
+            src="/public/assets/project2.png"
             alt="project 1"
             className="max-w-full pt-10 px-16"
           />
           <p className="text-xl font-bold text-center hover:text-blue-600">
             KeepNotes: A simple application to manage your notes
           </p>
-        </Link>
-        <Link>
-          <img src="" alt="" />
         </Link>
       </div>
     </div>

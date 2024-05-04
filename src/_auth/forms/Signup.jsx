@@ -40,7 +40,7 @@ const Signup = () => {
         className=" px-8 rounded-3xl shadow-2xl max-h-[600px] py-10 flex flex-col justify-center max-lg:max-h-[570px] bg-white "
       >
         <div className="flex justify-center items-center gap-2 mb-8 max-lg:mt-2">
-          <img src="/src/assets/logo.svg" alt="" width={40} />
+          <img src="/public/assets/logo.svg" alt="" width={40} />
           <h2 className="text-3xl font-extrabold">Vite-Auth</h2>
         </div>
         <h2 className="text-2xl font-semibold text-center ">
