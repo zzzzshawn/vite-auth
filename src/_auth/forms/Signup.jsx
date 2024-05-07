@@ -46,10 +46,10 @@ const Signup = () => {
           <h2 className="text-3xl font-extrabold">Vite-Auth</h2>
         </div>
         <h2 className="text-2xl font-semibold text-center ">
-          Login to your account
+          Create your account
         </h2>
         <p className="text-md text-center mt-2 mb-6 max-sm:text-sm ">
-          Welcome back! please enter your details
+          Welcome! please enter your details
         </p>
         <div className="flex flex-col p-1 font-medium gap-1 ">
           <label htmlFor="name">Name</label>
