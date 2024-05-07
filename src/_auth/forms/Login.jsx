@@ -42,7 +42,7 @@ const Login = () => {
           <h2 className="text-3xl font-extrabold">Vite-Auth</h2>
         </div>
         <h2 className="text-2xl font-semibold text-center ">
-          Register for an account
+          Login to your account
         </h2>
         <p className="text-md text-center mt-2 mb-6 max-sm:text-sm ">
           Welcome back! please enter your details
