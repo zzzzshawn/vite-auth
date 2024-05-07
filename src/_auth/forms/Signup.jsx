@@ -49,7 +49,7 @@ const Signup = () => {
           Create your account
         </h2>
         <p className="text-md text-center mt-2 mb-6 max-sm:text-sm ">
-          Welcome! please enter your details
+          hello there! please enter your details
         </p>
         <div className="flex flex-col p-1 font-medium gap-1 ">
           <label htmlFor="name">Name</label>
@@ -84,7 +84,7 @@ const Signup = () => {
         <input
           type="submit"
           value="Submit"
-          className="bg-blue-600 px-3 py-1 rounded-2xl font-bold text-lg mt-5 cursor-pointer text-white"
+          className="bg-blue-600 hover:bg-blue-900 px-3 py-1 rounded-2xl font-bold text-lg mt-5 cursor-pointer text-white"
         />
 
         <p className="text-md text-center mt-4 ">
