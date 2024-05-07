@@ -5,7 +5,7 @@ import { useAuth } from "../../context/AuthProvider";
 
 const Login = () => {
   const navigate = useNavigate();
-  const { checkAuth, setIsLoading, isLoading} = useAuth();
+  const { checkAuth, setIsLoading} = useAuth();
 
   const [currentUser, setCurrentUser] = useState({
     email: "",
@@ -66,7 +66,7 @@ const Login = () => {
         <input
           type="submit"
           value="Submit"
-          className="bg-blue-600 px-3 py-1 rounded-2xl font-bold text-lg mt-5 cursor-pointer text-white"
+          className="bg-blue-600  hover:bg-blue-700 px-3 py-1 rounded-2xl font-bold text-lg mt-5 cursor-pointer text-white"
         />
 
         <p className="text-md text-center mt-4 ">
