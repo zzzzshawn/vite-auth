@@ -39,7 +39,7 @@ const Signup = () => {
       <form
         onSubmit={handleSubmit}
         ref={loginRef}
-        className=" px-8 rounded-3xl shadow-2xl max-h-[600px] py-10 flex flex-col justify-center max-lg:max-h-[570px] bg-white "
+        className=" px-8 rounded-3xl shadow-2xl max-h-[600px] py-10 flex flex-col justify-center max-lg:max-h-[570px] bg-white  "
       >
         <div className="flex justify-center items-center gap-2 mb-8 max-lg:mt-2">
           <img src="/assets/logo.svg" alt="" width={40} />
@@ -48,8 +48,8 @@ const Signup = () => {
         <h2 className="text-2xl font-semibold text-center ">
           Register for an account
         </h2>
-        <p className="text-md text-center mt-2 mb-6 max-sm:text-sm ">
-          Hello there! please enter your details
+        <p className="text-lg text-center mt-2 mb-6 max-sm:text-sm ">
+          Welcome! please enter your details 
         </p>
         <div className="flex flex-col p-1 font-medium gap-1 ">
           <label htmlFor="name">Name</label>
