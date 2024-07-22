@@ -17,22 +17,30 @@ const Home = () => {
       <h2 className="text-4xl font-bold mt-[100px] ">
         Some other projects to look into
       </h2>
-      <div className="rounded-2xl h-full flex flex-col justify-center items-center">
-        <Link to="https://keep-notes-ui.vercel.app/" target="_blank" className="flex flex-col items-center justify-center ">
+      <div className="rounded-2xl h-full  flex flex-col justify-center items-center">
+        <Link
+          to="https://socialzz.vercel.app/"
+          target="_blank"
+          className="flex flex-col items-center border-b p-10 justify-center "
+        >
           <img
-            src="/assets/project1.png"
+            src="/assets/socialzz.svg"
             alt="project 1"
             className="max-w-[70%] max-md:min-w-full max-md:px-0 max-md:pt-2 pt-10 px-16"
           />
-          <p className="text-xl font-bold text-center hover:text-red-600">
-            KeepNotes: A simple application to manage your notes
+          <p className="text-xl font-bold text-center hover:text-zinc-600">
+            Socialzz: Fully functional social media websites to share photos
           </p>
         </Link>
-        <Link to="https://tasks-zeta-two.vercel.app/" target="_blank" className="flex flex-col items-center justify-center ">
+        <Link
+          to="https://tasks-zeta-two.vercel.app/"
+          target="_blank"
+          className="flex flex-col items-center justify-center "
+        >
           <img
-            src="/assets/project2.png"
+            src="/assets/tasks.svg"
             alt="project 1"
-            className="max-w-[70%] max-md:min-w-full max-md:px-0 max-md:pt-2 pt-10 px-16"
+            className="w-full max-md:min-w-full max-md:px-0 max-md:pt-2 pt-10 px-16"
           />
           <p className="text-xl font-bold text-center hover:text-blue-600">
             Tasks: A simple application to manage your daily tasks

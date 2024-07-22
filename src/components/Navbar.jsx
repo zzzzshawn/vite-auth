@@ -1,13 +1,18 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthProvider";
 import { logoutUser } from "../lib/appwrite/api";
+import { useToast } from "./ui/use-toast";
 
 const Navbar = () => {
   const { isAuthenticated, setIsAuthenticated, setIsLoading } = useAuth();
+  const {toast} = useToast();
 
   const handleLogout = async () => {
     setIsLoading(true)
     await logoutUser();
+    toast({
+      title: "Logged out successfully",
+    })
     setIsAuthenticated(false);
     setIsLoading(false);
   };

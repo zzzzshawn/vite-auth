@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { createUser } from "../../lib/appwrite/api";
 import { useAuth } from "../../context/AuthProvider";
+import { useToast } from "@/components/ui/use-toast";
 
 const Signup = () => {
   const [currentUser, setCurrentUser] = useState({
@@ -11,7 +12,7 @@ const Signup = () => {
   });
   const { checkAuth, setIsLoading } = useAuth();
   const navigate = useNavigate();
-
+  const {toast} = useToast();
 
 
   const loginRef = useRef();
@@ -28,7 +29,14 @@ const Signup = () => {
     const isLoggedIn = await checkAuth();
     if(isLoggedIn ){
       navigate('/')
+      toast({
+        title: 'Account created successfully',
+      })
       setIsLoading(false)
+    }else{
+      toast({
+        title: 'Something went wrong',
+        })
     }
   };
 
@@ -83,7 +91,7 @@ const Signup = () => {
         </div>
         <input
           type="submit"
-          value="Submit"
+          value="Sign-up"
           className="bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded-2xl font-bold text-lg mt-5 cursor-pointer text-white"
         />
 

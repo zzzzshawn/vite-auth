@@ -6,9 +6,11 @@ import RootLayout from "./_root/RootLayout";
 import Home from "./_root/pages/Home";
 import About from "./components/About";
 
+
 const App = () => {
   return (
     <main className="text-white bg-black min-h-screen">
+
       <Routes>
         {/* Public routes */}
         <Route element={<AuthLayout />}>

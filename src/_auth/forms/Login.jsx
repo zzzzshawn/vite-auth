@@ -2,10 +2,14 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { loginUser } from "../../lib/appwrite/api";
 import { useAuth } from "../../context/AuthProvider";
+import { useToast } from "@/components/ui/use-toast"
+
 
 const Login = () => {
   const navigate = useNavigate();
   const { checkAuth, setIsLoading} = useAuth();
+  const { toast } = useToast()
+
 
   const [currentUser, setCurrentUser] = useState({
     email: "",
@@ -24,7 +28,14 @@ const Login = () => {
     const isLoggedIn = await checkAuth();
     if(isLoggedIn ){
       navigate('/')
+      toast({
+        title: "Log-in Successfull!"
+      })
       setIsLoading(false)
+    }else{
+      toast({
+        title: "Login Failed!"
+      })
     }
     
   };
@@ -65,7 +76,7 @@ const Login = () => {
         </div>
         <input
           type="submit"
-          value="Submit"
+          value="Log-in"
           className="bg-blue-600  hover:bg-blue-700 px-3 py-1 rounded-2xl font-bold text-lg mt-5 cursor-pointer text-white"
         />
 
